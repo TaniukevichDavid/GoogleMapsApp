@@ -1,8 +1,12 @@
-//
-//  Objects.swift
-//  GoogleMapsApp
-//
-//  Created by David Taniukevich on 23.07.22.
-//
 
 import Foundation
+
+struct Coordinates: Codable {
+    let point: Point
+    var lang_id = 3
+    
+    struct Point: Codable {
+        let lat: Double
+        let lng: Double
+    }
+}
